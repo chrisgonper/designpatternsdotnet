@@ -1,0 +1,16 @@
+C:\Users\chris\source\repos\MyProjects\events\bin\Debug\events.exe.config
+C:\Users\chris\source\repos\MyProjects\events\bin\Debug\events.exe
+C:\Users\chris\source\repos\MyProjects\events\bin\Debug\events.pdb
+C:\Users\chris\source\repos\MyProjects\events\obj\Debug\events.csproj.AssemblyReference.cache
+C:\Users\chris\source\repos\MyProjects\events\obj\Debug\events.csproj.SuggestedBindingRedirects.cache
+C:\Users\chris\source\repos\MyProjects\events\obj\Debug\events.csproj.CoreCompileInputs.cache
+C:\Users\chris\source\repos\MyProjects\events\obj\Debug\events.exe
+C:\Users\chris\source\repos\MyProjects\events\obj\Debug\events.pdb
+C:\Users\chris\source\repos\DesignPatterns\events\bin\Debug\events.exe.config
+C:\Users\chris\source\repos\DesignPatterns\events\bin\Debug\events.exe
+C:\Users\chris\source\repos\DesignPatterns\events\bin\Debug\events.pdb
+C:\Users\chris\source\repos\DesignPatterns\events\obj\Debug\events.csproj.AssemblyReference.cache
+C:\Users\chris\source\repos\DesignPatterns\events\obj\Debug\events.csproj.SuggestedBindingRedirects.cache
+C:\Users\chris\source\repos\DesignPatterns\events\obj\Debug\events.csproj.CoreCompileInputs.cache
+C:\Users\chris\source\repos\DesignPatterns\events\obj\Debug\events.exe
+C:\Users\chris\source\repos\DesignPatterns\events\obj\Debug\events.pdb

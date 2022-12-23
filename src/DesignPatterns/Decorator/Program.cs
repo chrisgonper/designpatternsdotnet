@@ -1,0 +1,43 @@
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Runtime.InteropServices;
+
+namespace Decorator
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            IPersonReader loggingLimitReader = new LoggingDecorator(
+                                                    new LimitDecorator(
+                                                        new PersonReader(), 3), new ConsoleLogger());
+            //var people = loggingLimitReader.Read();
+
+            IPersonReader loggingReader = new LoggingDecorator(new PersonReader(), new ConsoleLogger());
+
+            //var people = loggingReader.Read();
+
+            IPersonReader limitedReader = new LimitDecorator(new PersonReader(), 1);
+
+            //var people = limitedReader.Read();
+
+            IPersonReader personReader = new PersonReader();
+
+            var people = personReader.Read();
+            
+            PrintResult(people);
+
+
+            Console.ReadKey();
+        }
+
+        public static void PrintResult(IEnumerable<Person> people)
+        {
+            foreach (var person in people)
+            {
+                Console.WriteLine($"{person.Name} was born on {person.DOB:MMM dd, yyyy}");
+            }
+        }
+    }
+}
