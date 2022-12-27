@@ -7,13 +7,13 @@ namespace events
         static void Main(string[] args)
         {
             var priceReader = new PriceReader();
-            var emailNotifier = new EmailNotifier(30000);
+            var emailNotifier = new EmailNotifier(40000);
             //attach de event
             priceReader.PriceRead += emailNotifier.Notify;
 
             priceReader.ReadCurrentPrice();
             //is a good practice to detach the event
-            //priceReader.PriceRead -= emailNotifier.Notify;
+            priceReader.PriceRead -= emailNotifier.Notify;
 
             Console.ReadKey();
         }
