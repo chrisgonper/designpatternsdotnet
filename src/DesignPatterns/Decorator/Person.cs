@@ -14,5 +14,9 @@ namespace Decorator
             Name = name;
             DOB = dOB;
         }
+        public override string ToString()
+        {
+            return $"{Id} - {Name} - {DOB:dd/mm/yy}";
+        }
     }
 }
