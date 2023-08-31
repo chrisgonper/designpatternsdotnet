@@ -38,7 +38,7 @@ namespace Decorator
                 Console.WriteLine($"{person.Name} was born on {person.DOB:MMM dd, yyyy}");
             }
         }
-        public static int GetValue(string value)
+        public static int GetNumberA(string value)
         {
             return int.Parse(value);
         }
