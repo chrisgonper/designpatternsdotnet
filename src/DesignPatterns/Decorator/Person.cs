@@ -8,7 +8,7 @@ namespace Decorator
         public string Name { get; set; }
         public DateTime DOB { get; set; }
         public string Address { get; set; }
-        public Person(int id, string name, DateTime dOB, string address)
+        public Person(int id, string name, DateTime dOB, string address = "")
         {
             Id = id;
             Name = name;
@@ -17,7 +17,7 @@ namespace Decorator
         }
         public override string ToString()
         {
-            return $"{Id} - {Name} - {DOB:dd/mm/yy}";
+            return $"{Id} - {Name} - {DOB:dd/mm/yy} - {Address}";
         }
     }
 }
