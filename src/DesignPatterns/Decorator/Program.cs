@@ -5,6 +5,7 @@ namespace Decorator
 {
     internal class Program
     {
+        public static int defaultNum = 0;
         static void Main(string[] args)
         {
             IPersonReader loggingLimitReader = new LoggingDecorator(
