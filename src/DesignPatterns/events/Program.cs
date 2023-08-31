@@ -14,7 +14,7 @@ namespace events
             priceReader.ReadCurrentPrice();
             //is a good practice to detach the event
             priceReader.PriceRead -= emailNotifier.Notify;
-
+            //test comment
             Console.ReadKey();
         }
 
