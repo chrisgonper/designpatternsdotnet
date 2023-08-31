@@ -16,7 +16,7 @@ namespace Decorator
         }
         public override string ToString()
         {
-            return $"{Id} - {Name} - {DOB:dd/mm/yy}";
+            return $"{Id} - {Name} - {DOB:dd/mm/yy} - {Address}";
         }
     }
 }
