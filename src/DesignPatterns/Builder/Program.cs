@@ -79,7 +79,7 @@ namespace Builder
 
             Console.WriteLine(car);
 
-            Student student = new Student(10, new[] {10,9,9});
+            Student student = new Student(10, new[] {10,9,9}, new DateTime(1999,10,10));
 
             Console.WriteLine(student);
 
@@ -90,11 +90,13 @@ namespace Builder
         {
             public int Id { get; set; }
             public IEnumerable<int> Marks { get; set; }
+            public DateTime DOB { get; set; }
 
-            public Student(int id, IEnumerable<int> marks)
+            public Student(int id, IEnumerable<int> marks, DateTime dOB)
             {
                 Id = id;
                 Marks = marks;
+                DOB = dOB;
             }
             public Student Get()
             {
